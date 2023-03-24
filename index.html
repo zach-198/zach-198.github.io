@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zachary Paulsen</title>
+    <style>
+      /* Style for the background gradient */
+      body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom right, #000cb8, #f70d0d);
+      }
+      
+      /* Center the title */
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+        color: #ccc;
+      }
+      
+      /* Style for the clickable boxes */
+      .box-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      
+      .box {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        background-color: #ccc;
+        text-align: center;
+        line-height: 200px;
+        cursor: pointer;
+        border-radius: 20px;
+        transition: all 0.2s ease-in-out;
+      }
+      
+      .box:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+      
+      .box:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        transition: all 0.2s ease-in-out;
+        border-radius: 20px;
+      }
+      
+      .box:hover:before {
+        opacity: 1;
+      }
+      
+      a {
+        color: inherit;
+        text-decoration: none;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Choose an Assignment</h1>
+    <div class="box-container">
+      <a href="/assignment4/">
+        <div class="box">Assignment 4</div>
+      </a>
+      <a href="/assignment5/">
+        <div class="box">Assignment 5</div>
+      </a>
+    </div>
+  </body>
+</html>
