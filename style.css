@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #010430, #453f62);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  color: #ccc;
+  font-size: 36px;
+}
+
+p {
+  text-align: center;
+  color: #ccc;
+}
+
+.links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-box {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  margin: 10px;
+  background-color: #ccc;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.link-box:hover {
+  transform: scale(112.5%);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.link-box:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  border-radius: 20px;
+}
+
+.link-box:hover:before {
+  opacity: 1;
+}
+
+.quick-links {
+  padding-bottom: 50px;
+}
+
+.mass-text {
+  height: 100vh;
+  width: 50%;
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.mass-text p {
+  text-align: left;
+  color: #ccc;
+  font-size: 20px;
+}
+
+.mass-text h1 {
+  text-align: left;
+  margin-top: 50px;
+  color: #ccc;
+  font-size: 36px;
+}
+
+.new-line {
+  height: 2px;
+}
+
+.img-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50% 50%;
+  height: 100vh;
+  width: 50%;
+  float: right;
+}
+
+.img-container img {
+  height: 33vh;
+  width: 33vh;
+  padding-top: 50px;
+  object-fit: cover;
+  object-position: center;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.img-container img:hover {
+  transform: scale(120%);
+}
+
+#school-assignments {
+  height: 50px;
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+
+.box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  background-color: #ccc;
+  text-align: center;
+  line-height: 100px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.box:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  border-radius: 20px;
+}
+
+.box:hover:before {
+  opacity: 1;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

@@ -1,80 +1,72 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Zachary Paulsen</title>
-    <style>
-      /* Style for the background gradient */
-      body {
-        margin: 0;
-        padding: 0;
-        background: linear-gradient(to bottom right, #000cb8, #f70d0d);
-      }
-      
-      /* Center the title */
-      h1 {
-        text-align: center;
-        margin-top: 50px;
-        color: #ccc;
-      }
-      
-      /* Style for the clickable boxes */
-      .box-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
-      
-      .box {
-        position: relative;
-        width: 200px;
-        height: 200px;
-        margin: 10px;
-        background-color: #ccc;
-        text-align: center;
-        line-height: 200px;
-        cursor: pointer;
-        border-radius: 20px;
-        transition: all 0.2s ease-in-out;
-      }
-      
-      .box:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-      }
-      
-      .box:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.2);
-        opacity: 0;
-        transition: all 0.2s ease-in-out;
-        border-radius: 20px;
-      }
-      
-      .box:hover:before {
-        opacity: 1;
-      }
-      
-      a {
-        color: inherit;
-        text-decoration: none;
-    }
-    </style>
+    <title>Welcome!</title>
+    <script src="welcome.js"></script>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Choose an Assignment</h1>
-    <div class="box-container">
-      <a href="/assignment4/">
-        <div class="box">Assignment 4</div>
-      </a>
-      <a href="/assignment5/">
-        <div class="box">Assignment 5</div>
-      </a>
+    <div>
+      <h1>Hello, my name is Zachary Paulsen</h1>
+      <p>I am a student at Sacramento State studying Computer Science.</p><br>
+      <p>Here you'll find important information about me, my studies, and my qualifications.</p>
+      <hr /> 
+    </div>
+    <div class="quick-links">
+      <h1>Quick Links</h1>
+      <div class="links-container">
+        <a href="#about">
+          <div class="link-box">About Me</div>
+        </a>
+        <a href="#resume">
+          <div class="link-box">Resume</div>
+        </a>
+        <a href="#school-assignments">
+          <div class="link-box">School</div>
+        </a>
+      </div>
+    </div>
+    <div id="about"></div>
+    <div class="mass-text">
+      <h1>About Me</h1>
+      <p>My name is Zachary, but you can call me Zach. My parents would prefer if you didn't, after all, they named me that
+        for a reason. I am a simple man: I like cars, planes, and lifting weights.</p>
+      <div class="new-line"></div>
+      <p>Cars are my first love. I was introduced to horsepower at a very young age. My father taught me how how to work
+        on cars, how to do it right, and how to enjoy cars after you successfully complete the first two steps. I come from a 
+        Chevrolet family and I was lucky enough to drive a 1990 Corvette to high school.</p>
+      <div class="new-line"></div>
+      <p>Planes are a recent fascination of mine. My father was a pilot and a certified A&P mechanic before he worked on cars. 
+        My first experience with an airplane was my 16th birthday. I was gifted a Discovery flight at the local regional 
+        airport (Nut Tree, KVCB), which consisted of an hour and a half of white knuckle horror. Being of the current 
+        generation of kids, my most recent flight time can be found in Microsoft Flight Simualtor.</p>
+      <div class="new-line"></div>
+      <p>I also enjoy lifting weights. I was the smallest and skinniest kid growing up, and I eventually had enough. In the
+        middle of 2020, I began teaching myself the discipline of working out 6 days a week consistently, progressing over time,
+        and stepping outside my comfort zone by pushing the limits. These skills have translated to real-life applications and have
+        helped me fortify a strong mind to accompany my strong body.</p>
+      <div class="new-line"></div>
+    </div>
+    <div class="img-container">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Bald_Eagle_Portrait.jpg">
+      <img src="https://d.newsweek.com/en/full/343853/bald-eagle-alaska-preserve-2.jpg?w=1600&h=1200&q=88&f=9bbda6952822549e7bfd9e584c62e5bf">
+      <img src="https://nationaltoday.com/wp-content/uploads/2020/06/American-Eagle-1.jpg">
+    </div>
+    <hr /><br>
+    <div id="school-assignments"></div>
+    <div class="school">
+      <h1>School Assignments</h1>
+      <div class="box-container">
+        <a href="https://github.com/CSC190-Squad/CMS" target="_blank">
+          <div class="box">Senior Project<br>(CharterManagementSystem)</div>
+        </a>
+        <a href="/assignment4/">
+          <div class="box">Assignment 4<br>(For CSC196W)</div>
+        </a>
+        <a href="/assignment5/">
+          <div class="box">Assignment 5<br>(For CSC196W)</div>
+        </a>
+      </div>
     </div>
   </body>
 </html>
